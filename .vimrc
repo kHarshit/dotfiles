@@ -8,7 +8,7 @@ set ignorecase
 set number
 set ruler
 set laststatus=2
-set mouse=a
+" set mouse=a
 set showmatch
 set showmode
 set autoindent
@@ -27,6 +27,7 @@ set backspace=indent,eol,start " Allow backspacing over everything in insert mod
 "          " Quit with 'q' instead of ':q'. VERY useful!
 "             map q :q<CR>
 
+" For status line at bottom
 func! STL()
   let stl = '%f [%{(&fenc==""?&enc:&fenc).((exists("+bomb") && &bomb)?",B":"")}%M%R%H%W] %y [%l/%L,%v] [%p%%]'
   let barWidth = &columns - 65 " <-- wild guess
