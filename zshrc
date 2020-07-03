@@ -68,7 +68,12 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git common-aliases dirhistory emoji extract rsync history-substring-search)
+# use either history-substring-search or zsh-navigation-tools
+# common-aliases: e.g. rm for rm -i (to confirm), ll etc
+# dirhistory: use ALT+left, right, up, down
+# extract: extracts the archive file
+# rsync: to copy with progress e.g. rsync-copy
+plugins=(zsh-navigation-tools git common-aliases dirhistory extract rsync)
 
 source $ZSH/oh-my-zsh.sh
 
