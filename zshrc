@@ -42,7 +42,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
@@ -58,7 +58,7 @@ COMPLETION_WAITING_DOTS="true"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -73,7 +73,7 @@ COMPLETION_WAITING_DOTS="true"
 # dirhistory: use ALT+left, right, up, down
 # extract: extracts the archive file
 # rsync: to copy with progress e.g. rsync-copy
-plugins=(zsh-navigation-tools git common-aliases dirhistory extract rsync)
+plugins=(zsh-navigation-tools git common-aliases dirhistory extract rsync z zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
